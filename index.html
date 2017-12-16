@@ -456,6 +456,9 @@ double calc_sin (double degree) {
 }
 ```
 
+.hmmm[
+    <i class="icofont icofont-question"></i>
+]
 
 ---
 
@@ -508,7 +511,6 @@ class: editor
 ".buy-form" ? do
   margin     (em 0) auto
   maxWidth   (em 30.0)
-  paddingTop (em 4.0)
   fontFamily ["Roboto"] [sansSerif]
 ```
 
@@ -523,6 +525,36 @@ body $
   div ! class_ "container" $
     div ! class_ ".buy-form"
       ...
+```
+
+
+---
+
+
+class: editor
+
+```haskell
+body $
+  div ! class_ "container" $
+*   div ! class_ ".buy-form"
+      ...
+```
+
+
+---
+
+
+class: editor
+
+```haskell
+data ClassName
+  = LanguageSwitcher
+  | CurrentLanguage
+  | BuyForm
+  ...
+  | Copyright
+  | SocialButtons
+  deriving (Show)
 ```
 
 
@@ -569,7 +601,30 @@ class: editor
 *cl_ BuyForm ? do
   margin     (em 0) auto
   maxWidth   (em 30.0)
-  paddingTop (em 4.0)
+  fontFamily ["Roboto"] [sansSerif]
+```
+
+
+---
+
+
+class: editor
+
+```haskell
+*cl_ BuyForm ? do
+  margin     (em 0) auto
+  maxWidth   (em 30.0)
+  fontFamily ["Roboto"] [sansSerif]
+```
+
+.produces-html[
+    <i class="icofont icofont-swoosh-down"></i>
+]
+
+```haskell
+*"." <> "BuyForm" ? do
+  margin     (em 0) auto
+  maxWidth   (em 30.0)
   fontFamily ["Roboto"] [sansSerif]
 ```
 
