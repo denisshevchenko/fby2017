@@ -314,3 +314,11 @@ a:active {
     margin-bottom: -0.6em;
     color: #999;
 }
+
+.equal-to {
+    text-align: center;
+    font-size: 4.1em;
+    margin-top: -0.9em;
+    margin-bottom: -0.9em;
+    color: #999;
+}
